@@ -9,13 +9,32 @@ body {
 }
 
 /* ---------------------------------------------------- */
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 0 auto;
+	justify-content: center;
+}
+@media screen and (min-width: 540px){
+	.wrapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
 .box{
-	max-width: 300px;
+	width: 100%;
 	border: 1px solid rgb(189, 189, 189);
 	border-radius: 5px;
 	text-align: center;
-	padding: 20px;
-	margin: 20px auto;
+	padding: 15px;
+	margin: 10px;
+}
+@media screen and (min-width: 540px){
+	.box{
+		width: 45%;
+	}
 }
 .box img{
 	border-radius: 100px;
